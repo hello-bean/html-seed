@@ -1,1 +1,28 @@
 /* Styles go here */
+
+#superButton {
+	color: white;
+	background-color: green;
+	font-size: 16px;
+	border-radius: 12px;
+	padding: 10px 24px;
+	display: block;
+}
+
+#newButton {
+	color: white;
+	background-color: green;
+	font-size: 16px;
+	border-radius: 12px;
+	padding: 10px 24px;
+	display: block;
+}
+
+#evilButton {
+	color: white;
+	background-color: red;
+	font-size: 16px;
+	border-radius: 12px;
+	padding: 10px 24px;
+	display: block;
+}

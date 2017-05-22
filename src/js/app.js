@@ -7,6 +7,8 @@ var addDiv = document.getElementById('buttonAdd');
 var superButton = document.getElementById('superButton');
 superButton.addEventListener('click', superButtonClicked);
 
+var buttons = [superButton];
+
 //should make newButton usable in the delete function ?
 var newButton;
 
@@ -21,6 +23,7 @@ function superButtonClicked() {
   addDiv.appendChild(newButton);
   
   newButton.addEventListener('click', superButtonClicked);
+  buttons.push(newButton);
 
   numButtons ++;
 }
@@ -33,8 +36,10 @@ function evilButtonClicked() {
 	console.log('Evil Button clicked');
 
 
-	newButton.parentNode.removeChild('superButton');
+	//newButton.parentNode.removeChild('superButton');
 
+
+	button[numButtons].remove();
 
 }
 
